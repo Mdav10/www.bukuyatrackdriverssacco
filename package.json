@@ -1,0 +1,12 @@
+{
+  "name": "bukuyatrackdriverssacco",
+  "version": "1.0.0",
+  "description": "BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -l 8080"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}
