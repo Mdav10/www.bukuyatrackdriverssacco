@@ -4,6 +4,7 @@
   "description": "BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY",
   "main": "index.html",
   "scripts": {
+    "build": "cp index.html style.css script.js build/ || true",
     "start": "serve . -l 8080"
   },
   "dependencies": {
