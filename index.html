@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <meta name="theme-color" content="#1a3a4a" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY - Empowering Our Community Through Secure Savings" />
     <title>BUKUYA Driver's Savings & Credit Cooperative</title>
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav id="navbar">
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" data-aos="fade-down" data-aos-duration="800">
         <div class="nav-container">
             <div class="logo">
                 <i class="fas fa-hand-holding-usd"></i>
-                <span>BUKUYA TRUCK DRIVERS SACCO</span>
+                <span>BUKUYA CO-OP</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-users"></i> About Us</a></li>
+                <li><a href="#services" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#why-us" class="nav-link"><i class="fas fa-star"></i> Why Us</a></li>
+                <li><a href="#membership" class="nav-link"><i class="fas fa-id-card"></i> Membership</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
@@ -33,131 +53,333 @@
         </div>
     </nav>
 
-    <!-- HOME SECTION -->
+    <!-- ===== HOME/HERO SECTION ===== -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY</h1>
-            <p class="tagline"><i class="fas fa-quote-left"></i> Empowering Our Community Through Secure Savings, Affordable Loans, and Financial Growth. <i class="fas fa-quote-right"></i></p>
-            <div class="hero-description">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Animated Badge -->
+            <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-shield-alt"></i> Trusted Cooperative Since 2020
+            </div>
+            
+            <h1 data-aos="fade-up" data-aos-delay="300">
+                BUKUYA DRIVER'S <br />
+                <span class="highlight">SAVINGS & CREDIT</span> <br />
+                COOPERATIVE SOCIETY
+            </h1>
+            
+            <p class="tagline" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-quote-left"></i> Empowering Our Community Through Secure Savings, 
+                Affordable Loans, and Financial Growth. <i class="fas fa-quote-right"></i>
+            </p>
+            
+            <div class="hero-description" data-aos="fade-up" data-aos-delay="500">
                 <p>Welcome to BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY, a trusted community financial cooperative dedicated to helping individuals, families, and small businesses achieve financial stability and long-term success.</p>
                 <p>We believe that financial growth begins with smart saving and accessible financial support. Whether you are planning for your family's future, growing your business, or looking for a reliable financial partner, we are here to support your journey every step of the way.</p>
                 <p>Our cooperative provides secure savings services, affordable loan opportunities, and professional member support designed to improve the financial well-being of our community.</p>
                 <p>At BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY, every member matters. We are committed to building trust, promoting financial responsibility, and creating opportunities that help our members grow with confidence.</p>
                 <p>Join a cooperative where your future is our priority.</p>
             </div>
-            <div class="hero-buttons">
-                <a href="#membership" class="btn btn-primary"><i class="fas fa-user-plus"></i> Open an Account</a>
-                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#membership" class="btn btn-primary btn-glow">
+                    <i class="fas fa-user-plus"></i> Open an Account
+                    <span class="btn-ripple"></span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+            </div>
+
+            <!-- Animated Stats -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Million UGX in Savings</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Years of Service</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT US -->
+    <!-- ===== ABOUT US ===== -->
     <section id="about" class="section">
         <div class="container">
-            <h2><i class="fas fa-users"></i> About Us</h2>
-            <p>BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY is a member-owned financial cooperative serving the Bukuya community and beyond. We provide secure savings, affordable credit, and financial education to empower our members.</p>
-            <p>Our cooperative was founded on the principles of mutual support, transparency, and community development. We are regulated and operate under cooperative laws to ensure the safety and growth of your savings.</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Us</span>
+                <h2><i class="fas fa-users"></i> Who We Are</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <p>BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY is a member-owned financial cooperative serving the Bukuya community and beyond. We provide secure savings, affordable credit, and financial education to empower our members.</p>
+                    <p>Our cooperative was founded on the principles of mutual support, transparency, and community development. We are regulated and operate under cooperative laws to ensure the safety and growth of your savings.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Member-Owned & Operated</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regulated & Secure</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Community Focused</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-handshake"></i>
+                        <p>Building Trust Together</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- OUR SERVICES -->
+    <!-- ===== SERVICES ===== -->
     <section id="services" class="section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-concierge-bell"></i> Our Services</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Services</span>
+                <h2><i class="fas fa-concierge-bell"></i> What We Offer</h2>
+                <div class="section-divider"></div>
+            </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-piggy-bank"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
                     <h3>Savings Accounts</h3>
                     <p>Secure savings options with competitive interest rates. Save for your future with confidence.</p>
+                    <a href="#membership" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-hand-holding-usd"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
                     <h3>Affordable Loans</h3>
                     <p>Access quick and affordable loans for personal needs, business growth, and emergencies.</p>
+                    <a href="#membership" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Financial Education</h3>
                     <p>Workshops and resources to help you manage your finances and build wealth.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-handshake"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
                     <h3>Member Support</h3>
                     <p>Personalized support from our friendly team to guide you every step of the way.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
+    <!-- ===== WHY CHOOSE US ===== -->
     <section id="why-us" class="section">
         <div class="container">
-            <h2><i class="fas fa-star"></i> Why Choose Us</h2>
-            <ul class="why-list">
-                <li><i class="fas fa-check-circle"></i> Trusted by the community for decades</li>
-                <li><i class="fas fa-check-circle"></i> Transparent and fair lending practices</li>
-                <li><i class="fas fa-check-circle"></i> Competitive interest rates on savings and loans</li>
-                <li><i class="fas fa-check-circle"></i> Member-focused service with a personal touch</li>
-                <li><i class="fas fa-check-circle"></i> Regulated and secure cooperative</li>
-            </ul>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why Choose Us</span>
+                <h2><i class="fas fa-star"></i> Why Choose BUKUYA CO-OP?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="why-grid">
+                <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-number">01</div>
+                    <div class="why-content">
+                        <h3>Trusted by the Community</h3>
+                        <p>Decades of service and thousands of satisfied members.</p>
+                    </div>
+                </div>
+                <div class="why-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-number">02</div>
+                    <div class="why-content">
+                        <h3>Transparent Practices</h3>
+                        <p>Fair lending practices with no hidden fees or surprises.</p>
+                    </div>
+                </div>
+                <div class="why-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-number">03</div>
+                    <div class="why-content">
+                        <h3>Competitive Rates</h3>
+                        <p>Best interest rates on savings and loans in the region.</p>
+                    </div>
+                </div>
+                <div class="why-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-number">04</div>
+                    <div class="why-content">
+                        <h3>Member-Focused Service</h3>
+                        <p>Personal touch with professional financial guidance.</p>
+                    </div>
+                </div>
+                <div class="why-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-number">05</div>
+                    <div class="why-content">
+                        <h3>Regulated & Secure</h3>
+                        <p>Fully compliant with cooperative laws and regulations.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- MEMBERSHIP SECTION (Target of Open an Account) -->
+    <!-- ===== MEMBERSHIP ===== -->
     <section id="membership" class="section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-id-card"></i> Become a Member Today</h2>
-            <p>We are excited to welcome new members to our growing cooperative family.</p>
-            <p>Opening an account is simple and begins with a visit to our office, where our friendly staff will guide you through the registration process and answer any questions you may have.</p>
-            <p>Visit us today and discover how becoming a member can help you build a stronger financial future through secure savings and affordable loan services.</p>
-            <div class="membership-details">
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Our Office Location:</strong> Bukuya, Kassanda Road</p>
-                <p><i class="fas fa-heart"></i> We look forward to serving you.</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Join Us</span>
+                <h2><i class="fas fa-id-card"></i> Become a Member Today</h2>
+                <div class="section-divider"></div>
             </div>
-            <a href="#contact" class="btn btn-primary"><i class="fas fa-store"></i> Visit Our Office</a>
+            <div class="membership-content" data-aos="fade-up">
+                <p>We are excited to welcome new members to our growing cooperative family.</p>
+                <p>Opening an account is simple and begins with a visit to our office, where our friendly staff will guide you through the registration process and answer any questions you may have.</p>
+                <p>Visit us today and discover how becoming a member can help you build a stronger financial future through secure savings and affordable loan services.</p>
+                <div class="membership-details">
+                    <div class="membership-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Our Office Location:</strong>
+                            <span>Bukuya, Kassanda Road</span>
+                        </div>
+                    </div>
+                    <div class="membership-info">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <span>We look forward to serving you.</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-store"></i> Visit Our Office
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact" class="section">
         <div class="container">
-            <h2><i class="fas fa-phone-alt"></i> We'd Love to Hear From You</h2>
-            <p>Whether you would like to become a member, learn more about our services, or simply ask a question, our team is always ready to assist you.</p>
-            <p>Feel free to visit our office during working hours or contact us using the information below.</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contact Us</span>
+                <h2><i class="fas fa-phone-alt"></i> We'd Love to Hear From You</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p data-aos="fade-up">Whether you would like to become a member, learn more about our services, or simply ask a question, our team is always ready to assist you.</p>
+            <p data-aos="fade-up" data-aos-delay="100">Feel free to visit our office during working hours or contact us using the information below.</p>
 
-            <div class="contact-grid">
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact-info">
-                    <p><i class="fas fa-map-pin"></i> <strong>Office Location:</strong> Bukuya, Kassanda Road</p>
-                    <p><i class="fas fa-clock"></i> <strong>Working Hours:</strong></p>
-                    <ul>
-                        <li>Monday – Friday: 8:00 AM – 4:30 PM</li>
-                        <li>Saturday: 8:00 AM – 11:30 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
+                    <div class="contact-item">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Bukuya, Kassanda Road</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <ul>
+                                <li>Monday – Friday: 8:00 AM – 4:30 PM</li>
+                                <li>Saturday: 8:00 AM – 11:30 PM</li>
+                                <li>Sunday: Closed</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-buttons">
-                    <a href="#" class="btn btn-secondary"><i class="fas fa-directions"></i> Get Directions</a>
-                    <a href="tel:+256700000000" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Our Office</a>
-                    <a href="mailto:info@bukuyacoop.ug" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Send Us a Message</a>
+                    <a href="#" class="btn btn-contact">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                    <a href="tel:+256700000000" class="btn btn-contact">
+                        <i class="fas fa-phone"></i> Call Our Office
+                    </a>
+                    <a href="mailto:info@bukuyacoop.ug" class="btn btn-contact">
+                        <i class="fas fa-paper-plane"></i> Send Us a Message
+                    </a>
                 </div>
             </div>
 
             <!-- Trust Statement -->
-            <div class="trust-statement">
-                <p><i class="fas fa-shield-alt"></i> Trusted by our community and committed to helping members build a stronger financial future through secure savings, affordable loans, and professional financial services.</p>
+            <div class="trust-statement" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-shield-alt"></i>
+                <p>Trusted by our community and committed to helping members build a stronger financial future through secure savings, affordable loans, and professional financial services.</p>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY. All rights reserved.</p>
-            <p><i class="fas fa-heart" style="color:#e74c3c;"></i> Empowering our community, one member at a time.[ THIS WEB WAS CREATED BY PETERSON ASCALI]</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>BUKUYA CO-OP</span>
+                    </div>
+                    <p>Empowering our community through secure savings, affordable loans, and financial growth.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Bukuya, Kassanda Road</li>
+                        <li><i class="fas fa-phone"></i> +256 700 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@bukuyacoop.ug</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Created by Peterson Ascali -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 BUKUYA DRIVER'S SAVINGS AND CREDIT COOPERATIVE SOCIETY. All rights reserved.</p>
+                <p class="creator-credit">
+                    <i class="fas fa-code"></i> Created with ❤️ by 
+                    <span class="creator-name">Peterson Ascali</span>
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
